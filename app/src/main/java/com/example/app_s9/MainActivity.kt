@@ -52,12 +52,12 @@ class MainActivity : AppCompatActivity() {
         switchDarkMode = findViewById(R.id.switchDarkMode)
 
 
-        // Restaurar el modo oscuro si estaba activado
+        // Restaurar el modo oscuro si estaba activado.
         val isDarkMode = sharedPreferencesHelper.getBoolean("dark_mode", false)
         switchDarkMode.isChecked = isDarkMode
         applyTheme(isDarkMode)
 
-        // Configurar listeners
+        // Configurar listeners,
         setupListeners()
 
         buttonGoToProfile.setOnClickListener {
