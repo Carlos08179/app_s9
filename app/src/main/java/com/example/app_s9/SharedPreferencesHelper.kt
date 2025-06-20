@@ -14,10 +14,13 @@ class SharedPreferencesHelper(context: Context) {
         private const val PREF_NAME = "AppS9Preferences"
         
         // Claves para las preferencias
+        const val KEY_DARK_MODE = "dark_mode"
         const val KEY_USERNAME = "username"
         const val KEY_IS_FIRST_TIME = "is_first_time"
         const val KEY_USER_ID = "user_id"
         const val KEY_THEME_MODE = "theme_mode"
+        const val KEY_VISIT_COUNT = "visit_count"
+
     }
     
     // Métodos para String

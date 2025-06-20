@@ -2,20 +2,17 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="16dp">
 
         <EditText
             android:id="@+id/editTextUsername"
@@ -53,6 +50,36 @@
             android:text=""
             android:textSize="18sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewVisitCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visitas: 0"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonResetCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar contador"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/buttonGoToProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ir a perfil"
+            android:layout_marginTop="16dp" />
+
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modo Oscuro"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
 
     </LinearLayout>
 

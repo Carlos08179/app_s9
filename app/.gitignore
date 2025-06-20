@@ -1,1 +1,25 @@
-/build
+# Android/IntelliJ/Java-related
+.idea/
+*.iml
+.gradle/
+local.properties
+*.log
+captures/
+build/
+*.apk
+*.ap_
+*.dex
+*.class
+
+# Kotlin
+*.kotlin_module
+
+# Android Studio
+.externalNativeBuild/
+.cxx/
+*.hprof
+
+# Git
+*.swp
+*~
+.DS_Store
